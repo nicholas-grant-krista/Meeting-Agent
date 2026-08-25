@@ -1,0 +1,17 @@
+# Local editor / OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Never commit credentials or customer-specific fill-ins
+.env
+*.local.md
+customer-*/
+
+# Build output, if a site generator is added later
+_site/
+node_modules/
+
+# Held back from publication until product + legal sign-off
+docs/99-reference/data-handling.md
