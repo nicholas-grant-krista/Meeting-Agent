@@ -96,8 +96,10 @@ workspaces that do not need it. See
 platform's own captions. Meetings where captions cannot be enabled still work,
 but take a slower and more expensive path.
 
-> **OPEN —** Are there platform-specific limits on meeting length or concurrent
-> bots that a customer should plan around? · _ask: Meeting Agent product owner_
+**Meetings are capped at 3 hours.** The bot leaves at that point and the meeting
+is processed normally — you get everything up to the cap, not nothing. Plan
+around it if you run all-day sessions. See
+[limits and quotas](../99-reference/limits-and-quotas.md).
 
 ---
 

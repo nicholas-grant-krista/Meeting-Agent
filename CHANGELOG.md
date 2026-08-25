@@ -26,3 +26,14 @@ the Meeting Agent release they document.
 - This first pass is derived from internal engineering documentation as of
   2026-08-24. Every OPEN marker in the set is a question that needs a
   product-owner answer before this is handed to a customer unaccompanied.
+
+### Changed
+- `limits-and-quotas.md` rewritten from source: meeting duration cap (3 h),
+  silence timeout (5 min), lobby wait (5 min), no-one-joined and everyone-left
+  windows, bot prepare/join offsets, scheduling scope and cycle, and field
+  limits are now stated rather than marked open.
+- Established that there are **no per-tier volume quotas** and **no configured
+  concurrency limit**, and said so plainly rather than leaving both ambiguous.
+- Two OPEN items remain on that page and are the real gaps: deployment capacity
+  for simultaneous captures, and a measured post-meeting processing expectation.
+- `capabilities-matrix.md` now states the 3-hour cap instead of asking about it.
