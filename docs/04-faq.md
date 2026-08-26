@@ -26,8 +26,10 @@ you have a question.
 
 | | |
 |---|---|
+| How do I get set up? | [Five minutes, one time](02-setup/first-time-registration.md) — sign in and connect your calendar |
 | Does Krista join Zoom meetings? | Yes — Zoom, Teams, and Google Meet, including other companies' meetings |
 | Why wasn't my meeting recorded? | Usually she was waiting in the lobby and wasn't let in |
+| My meetings aren't showing | Close the agent tab fully, reopen it, then Refresh Events |
 | Can I keep something private? | Yes — just ask her in the meeting chat |
 | Where's my transcript? | On the meeting itself, in Krista |
 | How long can a meeting be? | Up to 3 hours |
@@ -35,22 +37,75 @@ you have a question.
 
 ---
 
+## Getting started
+
+**How do I get set up?**
+
+It's a one-time setup of about five minutes: sign in to Krista, connect your
+calendar so she knows which meetings to join, then close and reopen the agent to
+check your meetings are showing. [Setting yourself
+up](02-setup/first-time-registration.md) walks through it.
+
+**Why do I have to sign in to Microsoft as well?**
+
+Krista works from your calendar, so she needs your permission to see it. That
+sign-in — your usual organizational account and multi-factor prompt — is how you
+grant it. It's a one-off; you won't be asked again unless the connection needs
+renewing.
+
+**I'm looking for "Meeting Agent" but I can't find it in my agent list.**
+
+Depending on how your organization has set things up, it may be listed as **New
+Conversation Agent**. It's the same thing. If there's more than one and you're
+not sure which, your administrator can point you at the right one.
+
+**I got an "Authentication Failed" message. Has something broken?**
+
+Almost certainly not — it's a known browser timing quirk rather than a real
+failure. Clicking **Refresh Events** on your dashboard clears it.
+
+**My meetings aren't appearing.**
+
+Two things to try, in order:
+
+1. **Close the agent tab completely and reopen it** — refreshing the page isn't
+   enough after connecting your calendar. Then click **Home** and, if needed,
+   **Refresh Events**.
+2. **Give it a few minutes.** Calendars take a little time to sync after being
+   connected.
+
+If they're still missing, reconnecting usually does it: **Conversation Agent →
+Initiate → Connect My Calendar**, and sign in again. Beyond that, your
+administrator can help.
+
+**I'm being told my email isn't on the registered domains list.**
+
+Your Krista account was set up with an address outside your organization's
+domains. Your administrator can confirm which email to use.
+
+---
+
 ## Finding help
 
 **Where's the best place to start when I have a question?**
 
-There's a help icon on the Krista screen — the small question mark. Searching
-there for whatever you're stuck on is usually the quickest route, and the main
-screen's help also has some short walkthrough videos.
+The **?** icon in the top-right corner of the agent opens the built-in User
+Guide, with short video tutorials covering the dashboard, meeting templates, and
+how Krista takes part in your meetings. Searching there for whatever you're stuck
+on is usually the quickest route.
 
 If that doesn't cover it, your organization's Krista or IT contact looks after
 your setup — which meetings Krista joins, who has access, what she's called in
 the participant list. They can reach Krista Support directly if anything needs
 escalating.
 
+Account matters — a 403 error, a missing agent, a permissions message, or a
+welcome email that never arrived — go straight to your administrator, since
+they're not something you can resolve from your side.
+
 **What does the "automatic" toggle do?**
 
-Searching **`automatic`** in the help icon will explain that setting right where
+Searching **`automatic`** in the User Guide will explain that setting right where
 you're looking at it. It's a useful habit generally — the in-product help covers
 the settings screens in more detail than this guide can.
 

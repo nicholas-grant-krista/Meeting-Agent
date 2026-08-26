@@ -113,9 +113,13 @@ that in advance.
 
 ## Where to get help
 
-The help icon in Krista — the small question mark — is the quickest place to
-start, and searching it for whatever you're stuck on usually does it. There are
-short walkthrough videos on the main screen's help too.
+The **?** icon in the top-right corner opens the built-in User Guide, with short
+video tutorials covering the dashboard, meeting templates, and how Krista takes
+part in your meetings. Searching it for whatever you're stuck on is usually the
+quickest route.
+
+Not set up yet, or your meetings aren't showing? [Setting yourself
+up](../02-setup/first-time-registration.md) covers it.
 
 Your organization's Krista or IT contact looks after naming, which meetings are
 captured, and access. They can bring in Krista Support if anything needs going

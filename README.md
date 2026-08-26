@@ -17,7 +17,8 @@ Do not hand a customer the whole repo. Hand them the track that matches their ro
 |---|---|---|
 | **Executive / champion** | "What is this and what will it do for us?" | [What is Meeting Agent](docs/01-overview/what-is-meeting-agent.md) → [How it works](docs/01-overview/how-it-works.md) |
 | **IT / Workspace Admin** | "What do I have to configure?" | [Prerequisites](docs/02-setup/prerequisites.md) → the platform page for Teams / Meet / Zoom → [Workspace configuration](docs/02-setup/workspace-configuration.md) → [Verify your setup](docs/02-setup/verify-your-setup.md) |
-| **End user** | "Why didn't the bot join my meeting?" | [FAQ](docs/04-faq.md) → [Meeting hygiene](docs/03-operating/meeting-hygiene.md) |
+| **New user being onboarded** | "How do I get started?" | [Setting yourself up](docs/02-setup/first-time-registration.md) → [Getting the best from Krista](docs/03-operating/meeting-hygiene.md) |
+| **End user** | "Why didn't Krista join my meeting?" | [Questions people ask](docs/04-faq.md) → [Getting the best from Krista](docs/03-operating/meeting-hygiene.md) |
 | **Security reviewer** | "Where does our data go?" | Not published yet — route to the customer's Krista TAM |
 | **Day-2 operator** | "It's live — now what?" | [Admin day 2](docs/03-operating/admin-day-2.md) → [Troubleshooting](docs/05-troubleshooting.md) |
 
@@ -29,6 +30,7 @@ Do not hand a customer the whole repo. Hand them the track that matches their ro
 - [Capabilities matrix](docs/01-overview/capabilities-matrix.md) — the "does it do X?" table
 
 **02 — Setup**
+- [Setting yourself up](docs/02-setup/first-time-registration.md) — the end-user walkthrough; pair this with your rollout email
 - [Prerequisites](docs/02-setup/prerequisites.md)
 - [Microsoft Teams](docs/02-setup/platform-teams.md)
 - [Google Meet](docs/02-setup/platform-google-meet.md)

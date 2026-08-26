@@ -20,7 +20,8 @@ several items are provisioned by Krista, not by you.
 |---|---|
 | A **Meeting Agent workspace** | Your tenant. Created by Krista during onboarding. |
 | A **license** bound to that workspace | Determines your tier (trial or production) and, for a trial, the expiry date. |
-| The **Meeting Agent URL** | Where your team signs in. |
+| Your **Krista address** | Where your team signs in — something along the lines of `us.krista.app`. Worth putting in your welcome email; people use it daily. |
+| **Sign-in credentials** for each user | Email and password, sent to each person as a welcome email. |
 
 A trial license carries a hard expiry. When it passes, both your users and your
 integrations stop working — not gradually, immediately. Know your date and start
@@ -33,9 +34,26 @@ the conversion conversation before it.
 Meeting Agent works from your calendar. Nothing is captured until a calendar is
 connected, because unscheduled meetings are invisible to it.
 
-> **OPEN —** Which calendar providers are supported for connection (Microsoft 365
-> only, or Google Workspace as well), and what admin consent is required for
-> each? · _ask: Meeting Agent product owner_
+**Each user connects their own calendar**, once, as part of their first sign-in.
+They authenticate with their **organizational Microsoft account** — email,
+password, and their usual multi-factor prompt — through a *Connect My Calendar*
+step. There is no bulk calendar connection to arrange on their behalf, so plan for
+each person to spend about five minutes on it. The walkthrough to hand them is
+[setting yourself up](first-time-registration.md).
+
+Two things to line up before you send that out:
+
+- **Accounts must use your organization's domain.** A Krista account created with
+  an address outside your registered domains will be stopped at the calendar step
+  with a "not on the registered domains list" message. Worth checking your user
+  list against your domains first — it is much easier to fix before people start
+  than during.
+- **Microsoft sign-in must be available to them.** If a user's Microsoft account
+  is blocked, sign-in fails at the first step.
+
+> **OPEN —** Is Google Workspace supported as a calendar source, or is Microsoft
+> 365 the only path? The registration flow we have documented is Microsoft-only.
+> · _ask: Meeting Agent product owner_
 
 ### Your internal domains
 

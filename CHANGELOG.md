@@ -73,3 +73,24 @@ the Meeting Agent release they document.
   rather than "type this command".
 - Disambiguated **Krista the company** from **Krista herself** where the two
   collided: "raise with Krista" is now "raise with Krista Support".
+
+### Added
+- **`first-time-registration.md` — the end-user setup walkthrough.** The guide had
+  nothing for the person actually being onboarded; setup was entirely
+  admin-facing. Covers sign-in, connecting the calendar via Microsoft, the
+  close-and-reopen step that catches people out, and where the User Guide lives.
+  Derived from the internal Registration Quick Start and generalised — no
+  customer name, domain, or tenant detail.
+
+### Changed
+- `prerequisites.md` now states that **each user connects their own calendar** with
+  their organizational Microsoft account, and flags the two things to line up
+  first: accounts must be on your registered domains, and Microsoft sign-in must
+  not be blocked.
+- FAQ gains a **Getting started** section — how to set up, why Microsoft sign-in is
+  needed, the "New Conversation Agent" naming, the "Authentication Failed"
+  non-failure, and meetings not appearing.
+- Help is now precise: the **?** icon top-right, opening the User Guide with video
+  tutorials — replacing the vaguer "help icon" wording.
+- `05-troubleshooting.md` gains a registration table covering the first-sign-in
+  symptoms, most of which are self-service.

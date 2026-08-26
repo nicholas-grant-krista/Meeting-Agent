@@ -17,6 +17,10 @@ last-verified: 2026-08-24
 *"there was correctly nothing to process"* from *"something broke,"* and that
 tells you immediately whether the problem is yours or Krista's.
 
+If the user is newly onboarded and *nothing* is working, start with
+[Section E](#section-e--access-problems) instead — first-sign-in problems look
+like capture problems but aren't.
+
 ```
 Meeting missing or wrong?
         │
@@ -154,9 +158,32 @@ that *did* state decisions clearly, raise it with your TAM.
 
 ## Section E — Access problems
 
+### Registration and first sign-in
+
+Most of what a new user hits is in this table, and almost all of it is
+self-service.
+
+| Symptom | Cause | Fix |
+|---|---|---|
+| "Authentication Failed" during setup | Known browser timing quirk, not a real failure | Click **Refresh Events** on the dashboard |
+| Meetings don't appear after connecting the calendar | The agent tab was refreshed rather than closed and reopened | Close the tab fully, reopen from the agent list, click **Home**, then **Refresh Events** |
+| Meetings still missing after a reopen | Calendar sync takes a few minutes | Wait, then **Refresh Events**. Still nothing → **Conversation Agent → Initiate → Connect My Calendar** and re-authenticate |
+| "Email address does not belong to the registered domains list" | The Krista account was created with an address outside your domains | Correct the account's email — an admin task |
+| Sign-in error at the very first step | The user's Microsoft account may be blocked | Unblock in your identity system |
+| 403, missing agent, permission message | Account or entitlement issue | Admin task; not fixable by the user |
+| Never received a welcome email | Account not provisioned, or mail delivery | Resend from user management |
+| Can't find "Meeting Agent" in the agent list | It may be labelled **New Conversation Agent** | Point the user at the right agent |
+
+A cluster of these arriving at once usually means the rollout email went out
+before accounts were fully provisioned. Sending
+[setting yourself up](02-setup/first-time-registration.md) alongside the welcome
+email heads off most of them.
+
+### Access and licensing
+
 | Symptom | Likely cause | Fix |
 |---|---|---|
-| Users suddenly cannot sign in | License expired or was deactivated | Check expiry; contact Krista |
+| Users suddenly cannot sign in | License expired or was deactivated | Check expiry; contact Krista Support |
 | Integrations stopped authenticating at the same moment | Same — a license cut blocks both channels at once | Contact Krista |
 | One user cannot see settings | Not a Meeting Agent Admin | Grant the role if appropriate |
 | A user can sign in but their meetings aren't captured | They are an Observer, not licensed | Convert to a licensed seat |
