@@ -54,11 +54,17 @@ Skipped is usually correct behaviour. Read the reason.
 
 ### "Never admitted"
 
-The bot reached the meeting and waited, but nobody let it in.
+The bot reached the meeting and waited **about 5 minutes**, but nobody let it in.
+
+That window is the thing to check first. The bot arrives just before the
+scheduled start, so a meeting that habitually begins ten minutes late will lose
+the bot before anyone thinks to admit it — the host isn't refusing, they're just
+late.
 
 - **One-off:** expected. Nothing to fix.
-- **Recurring, every time:** the host habitually doesn't admit it. Fix the habit,
-  or reconsider whether that series should be captured. It will not self-correct.
+- **Recurring, every time:** either the host habitually doesn't admit guests, or
+  the meeting reliably starts more than five minutes late. Both are habit fixes,
+  and neither self-corrects.
 - **Every external meeting:** your users don't know they need to admit it. Send
   out [meeting hygiene](03-operating/meeting-hygiene.md).
 

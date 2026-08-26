@@ -34,7 +34,9 @@ Meeting Agent reads your connected calendar. When a meeting appears, it is
   organized by someone outside your organization.
 
 Each bucket resolves independently to native Teams capture, the Krista Bot, or
-off. Recurring series are picked up in advance, sometimes weeks ahead.
+off. Recurring series appear in Meeting Agent well in advance so you can see
+what is coming, but capture for a given meeting is arranged **on the day it
+runs**.
 
 > **Changing routing takes effect on future meetings, not past ones.** If you
 > change a bucket's route, every meeting that has not yet started is re-routed on
@@ -46,17 +48,31 @@ off. Recurring series are picked up in advance, sometimes weeks ahead.
 
 ### If routed to the Krista Bot
 
-The bot is prepared shortly before the scheduled start, joins the meeting URL,
-and requests admission. From your attendees' point of view it is a participant in
-the roster with a display name you control — by default `Krista (<Your Workspace
-Name>)`, which is how attendees can tell which team's bot joined.
+The bot is prepared **10 minutes before** the scheduled start and joins about
+**60 seconds before** the meeting begins, so recording is already running when
+the first person speaks. From your attendees' point of view it is a participant
+in the roster with a display name you control — by default `Krista (<Your
+Workspace Name>)`, which is how attendees can tell which team's bot joined.
+
+If there is a lobby, it waits **up to 5 minutes** to be admitted. After that it
+gives up and the meeting is marked skipped.
 
 Once admitted, it records and captures participants, chat, and live captions. It
 reports progress continuously, so the meeting's status is visible while it is
 still running.
 
-The bot leaves when the meeting ends, everyone else leaves, a silence timeout is
-reached, or a maximum duration cap is hit.
+The bot leaves when:
+
+| Trigger | Timing |
+|---|---|
+| The host ends the meeting | Immediately |
+| Everyone else leaves | After **1 minute** alone |
+| Nobody ever joins | After **5 minutes** |
+| Sustained silence | After **5 minutes** of dead air |
+| Maximum duration reached | At **3 hours** |
+
+All five end the meeting normally — you get a transcript, summary, and action
+items for what was captured.
 
 ### If routed to native Teams
 

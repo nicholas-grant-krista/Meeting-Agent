@@ -53,10 +53,11 @@ user. A colleague on a personal account is fine.
 - [ ] The bot appears in the roster with your display name and avatar
 - [ ] After the meeting: transcript, summary, action items, follow-up actions
 
-**Deliberately fail it once.** Run a second external meeting and do not admit the
-bot. Confirm the meeting is marked **skipped** with a "never admitted" reason and
-nobody is paged. Your support team should recognize this state on sight — it will
-be your most common real-world question.
+**Deliberately fail it once.** Run a second external meeting and leave the bot in
+the lobby for **more than 5 minutes**. Confirm the meeting is marked **skipped**
+with a "never admitted" reason and nobody is paged. Your support team should
+recognize this state on sight — it will be your most common real-world question,
+and seeing the timing first-hand is what makes the five-minute window stick.
 
 ## Test 3 — Observer visibility
 

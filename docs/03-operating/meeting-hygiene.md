@@ -18,6 +18,11 @@ you ignore.
 If your meeting has a lobby or waiting room, **someone has to admit Meeting
 Agent** — it waits like any other guest.
 
+**It waits about 5 minutes, then gives up.** That is the number to remember. It
+arrives just before the scheduled start, so if your meeting habitually begins ten
+minutes late and nobody admits guests until the host arrives, the bot is already
+gone. Admit it when you see it, not when you're ready to start.
+
 It appears in the participant list with your organization's chosen name (often
 something like `Krista (Acme)`). On Teams it may be tagged **"Unverified"** —
 that just means it joined as a guest, not that anything is wrong.
@@ -74,9 +79,11 @@ connected calendar or ask your admin about exclusions.
 
 | Situation | What happens |
 |---|---|
-| Nobody admits the bot | Not recorded. Marked skipped. |
+| Nobody admits the bot within ~5 minutes | Not recorded. Marked skipped. |
 | You remove the bot mid-meeting | Recording discarded. Nothing processed. |
 | Meeting ends normally | Transcript, summary, action items. |
+| Your meeting runs past 3 hours | Captured up to 3 hours, then the bot leaves. Everything up to that point is processed. |
+| Everyone leaves but the meeting stays open | Bot leaves after a minute. |
 | The call drops or is cut short | Processed, with a note that the transcript may be incomplete. |
 | Captions were unavailable | Still transcribed, just by a different route. |
 | The link is WebEx or GoTo | Skipped — not supported. |

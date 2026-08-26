@@ -71,11 +71,17 @@ that prevents it.
 
 ### What changing routing does and does not affect
 
-- **Future meetings** — re-routed on the next scheduling cycle, including
-  recurring instances that were seeded weeks ago. An override becomes
-  authoritative the moment you save it.
+- **Future meetings** — re-routed on the next scheduling cycle, which runs about
+  once a minute. An override becomes authoritative the moment you save it.
+- **Recurring series** — every future instance follows the new routing, including
+  instances that already appeared in your calendar weeks ago. Capture is arranged
+  on the day each meeting runs, so there is no backlog of already-committed
+  instances to wait out.
 - **Meetings already completed or in progress** — never re-routed. History is
   frozen and always reflects what actually happened.
+
+In practice this means you can change routing in the morning and it governs that
+afternoon's meetings.
 
 ### Reading the dropdowns
 

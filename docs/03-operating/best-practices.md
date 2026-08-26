@@ -48,9 +48,15 @@ meetings and set the rest to `Microsoft Teams` or `None`.
 opt-out: no bot, and the post-meeting stages are cleanly skipped rather than
 appearing as failures.
 
-**Change routing at a natural boundary.** Changes take effect on future meetings
-immediately, but recurring series are seeded far ahead. Change at the start of a
-week and let one cycle pass before judging the result.
+**Routing changes land fast — use that.** Capture is arranged on the day a
+meeting runs, so a change you save this morning governs this afternoon. You do
+not need to wait out a backlog of already-committed recurring instances.
+
+**Raise your peak capture volume during onboarding.** Meeting Agent does not cap
+simultaneous captures, so nothing in the product will warn you before your busiest
+slot becomes an environment-capacity problem. If your organization has a
+company-wide meeting hour where dozens of meetings start together, tell your TAM
+the number before your first one.
 
 ## Bot identity
 

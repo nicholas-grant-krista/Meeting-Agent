@@ -37,3 +37,9 @@ the Meeting Agent release they document.
 - Two OPEN items remain on that page and are the real gaps: deployment capacity
   for simultaneous captures, and a measured post-meeting processing expectation.
 - `capabilities-matrix.md` now states the 3-hour cap instead of asking about it.
+- Propagated the confirmed timings out of the reference table into the pages
+  where a customer actually meets them: the lifecycle in `how-it-works.md`, the
+  five-minute admission window in `meeting-hygiene.md`, `05-troubleshooting.md`
+  and `verify-your-setup.md`, same-day routing in `workspace-configuration.md`
+  and `best-practices.md`, and new FAQ entries for the duration cap, silence and
+  empty-meeting behaviour, trial limits, and simultaneous capture.

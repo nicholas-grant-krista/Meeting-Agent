@@ -61,8 +61,18 @@ video tile.
 No. It does not participate in the conversation.
 
 **What if nobody lets it in?**
-The meeting is not recorded and is marked skipped. This is the most common reason
-a meeting is missing.
+It waits about 5 minutes, then leaves. The meeting is not recorded and is marked
+skipped. This is the most common reason a meeting is missing — and often the
+host wasn't refusing, just running late.
+
+**Why does it turn up before the meeting starts?**
+It joins about a minute before the scheduled start so recording is already
+running when the first person speaks. It's prepared behind the scenes about ten
+minutes ahead of that.
+
+**What if everyone leaves but the meeting stays open?**
+The bot leaves after a minute alone and the meeting is processed normally. If
+nobody joins at all, it waits 5 minutes and then leaves.
 
 **What if I remove it mid-meeting?**
 Recording stops and the partial capture is **discarded**, not processed. Removing
@@ -98,6 +108,16 @@ transcript viewing on your Zoom account.
 
 **What if the meeting is cut short?**
 It is still processed, with a notice that the transcript may be incomplete.
+
+**Is there a maximum meeting length?**
+Yes — **3 hours**. The bot leaves at that point and the meeting is processed
+normally, so you get everything up to the cap rather than nothing. If you
+routinely run all-day sessions, raise it with your Krista TAM before relying on
+it.
+
+**What happens in a long silence?**
+After about 5 minutes of sustained dead air the bot leaves and the meeting is
+processed as normal.
 
 ## Setup and administration
 
@@ -144,6 +164,17 @@ Yes — as a Delegate Admin: admin authority, no paid seat.
 **What happens when a trial expires?**
 Access stops for users and integrations at once. There is no grace period and no
 read-only mode. Note your date and convert before it.
+
+**Does a trial limit how many meetings or minutes we can record?**
+No. Trial and production have the same capability and the same limits. A trial
+differs only in that it has a hard expiry date.
+
+**Is there a limit on how many meetings can be captured at the same time?**
+Not one set by the product — Meeting Agent does not cap or queue simultaneous
+captures. The practical ceiling is the capacity of the environment Krista runs
+for you. If you expect large peaks, such as a company-wide slot where many
+meetings start at once, raise it with your TAM as a capacity question rather than
+assuming either that a limit protects you or that none affects you.
 
 ## Data and privacy
 
