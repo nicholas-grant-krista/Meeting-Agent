@@ -12,7 +12,7 @@ last-verified: 2026-08-24
 
 Google Meet is captured by the **Krista Bot** only. There is no native route.
 
-Because every Meet meeting is captured by the bot, and the bot only handles the
+Because every Meet meeting is captured by Krista, and Krista only handles the
 external bucket unless you route internal to it as well, Meet meetings fall into
 the **external** bucket regardless of who organized them — the internal bucket is
 defined as *Teams meetings with an internal organizer*.
@@ -28,7 +28,7 @@ need to be a Krista customer.
 
 ## What your users will see
 
-The bot joins as a guest. On Meet that means it **knocks** and someone in the
+Krista joins as a guest. On Meet that means it **knocks** and someone in the
 meeting must admit it — the same prompt any external guest produces.
 
 If nobody admits it, the meeting is not recorded and is marked skipped. On a

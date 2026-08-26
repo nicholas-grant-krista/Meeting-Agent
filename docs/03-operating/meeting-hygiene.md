@@ -3,129 +3,124 @@ audience: end user — hand this out as a one-pager
 product-version: "2.1"
 sources:
   - conversation-agent:docs/meeting-bot-end-state-policy.md
+  - meeting-bot:src/observers/chat.ts
   - meeting-bot:docs/transcription.md
-last-verified: 2026-08-24
+last-verified: 2026-08-25
 ---
 
-# Meeting hygiene — for everyone
+# Getting the best from Krista
 
-Meeting Agent joins your meetings and turns them into notes, summaries, and
-action items. A few habits make the difference between output you trust and
-output you ignore.
+Krista joins your meetings and turns them into notes, summaries, and action
+items. There's nothing you have to do differently — but a few small habits make
+her noticeably more useful.
 
-## 1. Let the bot in
+## Let her in
 
-If your meeting has a lobby or waiting room, **someone has to admit Meeting
-Agent** — it waits like any other guest.
+If your meeting has a lobby or waiting room, Krista waits there like any other
+guest until someone lets her in.
 
-**It waits about 5 minutes, then gives up.** That is the number to remember. It
-arrives just before the scheduled start, so if your meeting habitually begins ten
-minutes late and nobody admits guests until the host arrives, the bot is already
-gone. Admit it when you see it, not when you're ready to start.
+She waits about **5 minutes**. She arrives just before the scheduled start, so if
+a meeting tends to begin ten minutes late and guests are admitted once everyone's
+gathered, she may already have left. Letting her in when you spot her is the one
+habit that matters most.
 
-It appears in the participant list with your organization's chosen name (often
-something like `Krista (Acme)`). On Teams it may be tagged **"Unverified"** —
-that just means it joined as a guest, not that anything is wrong.
+You'll see her in the participant list under whatever name your organization has
+given her — often something like `Krista (Acme)`. Teams may label her
+"Unverified", which simply means she joined as a guest.
 
-**If nobody admits it, the meeting is not recorded.** This is the single most
-common reason someone says "it didn't work." On a recurring meeting, it fails
-every time until someone changes the habit.
+If nobody lets her in, the meeting isn't recorded. It's the most common reason
+someone finds a meeting missing later.
 
-## 2. Turn on captions
+## Ask her for what you need
 
-Meeting Agent works best from the meeting platform's own live captions. Any
-participant can turn them on:
+You can talk to Krista in the **meeting chat**. She won't speak or interrupt, but
+she reads anything addressed to her.
+
+| Ask her | And she'll |
+|---|---|
+| `@Krista pause` | Stop transcribing |
+| `@Krista resume` | Pick up again |
+| `@Krista opt out` | Keep the meeting off the record |
+| `@Krista remove last 5 minutes` | Delete what was just said |
+| `@Krista help` | List these in the chat |
+
+Use the name you see in the participant list, and `help` any time you'd like the
+list again.
+
+**These are yours whenever you want them.** If a conversation moves somewhere
+sensitive, you don't need to remember to ask anyone afterwards — pause her, and
+resume when you're past it.
+
+If your team has built Krista conversations, you can also ask her things directly:
+`@Krista schedule a follow-up meeting with John`. Your Krista contact can tell you
+what's set up for you.
+
+## Turn captions on
+
+Krista works best from the meeting platform's own live captions. She usually turns
+them on herself, and doing it yourself is a reliable backup when a meeting really
+matters:
 
 - **Teams** — More actions → Language and speech → Turn on live captions
 - **Google Meet** — the **CC** button, or More options → Turn on captions
 - **Zoom** — Show Captions
 
-It usually turns captions on itself. Doing it yourself is a reliable fallback
-when a meeting matters.
+## Say the things you want captured
 
-## 3. Say who you are, and say what you decided
+She records who spoke and what was said — she can't record what was meant.
 
-The transcript records who spoke. It cannot record what you meant.
+- Introducing people at the start of external meetings helps her attribute
+  correctly.
+- Saying decisions out loud gets them into the summary. "So we're going with
+  option B" lands; everyone nodding doesn't.
+- Naming action items with an owner is what turns them into tracked actions:
+  "Priya will send the revised quote by Thursday."
 
-- Introduce people at the start of external meetings — attribution improves.
-- State decisions explicitly. "So we're going with option B" produces a decision
-  in the summary. Everyone nodding does not.
-- Say action items out loud with an owner: "Priya will send the revised quote by
-  Thursday." That is what turns into a tracked action item.
+## A note on removing her
 
-## 4. Learn the chat commands — they're your privacy controls
+If you remove Krista from a meeting, everything recorded up to that point is
+discarded rather than kept — a clear way to say you'd like nothing from that
+conversation retained.
 
-You can direct Meeting Agent from the **meeting chat** by mentioning it by name.
-It never speaks, but it reads messages addressed to it.
+If you'd rather keep most of the meeting and set aside only part of it, pausing
+or removing the last few minutes is the gentler option.
 
-| Type this in the chat | What happens |
+For meetings that shouldn't be captured at all, your administrator can arrange
+that in advance.
+
+## Worth knowing
+
+- She joins meetings from your calendar, so ad-hoc meetings won't include her.
+- She doesn't speak or join the conversation — chat only.
+- She supports Teams, Google Meet, and Zoom. WebEx and GoTo meetings are skipped.
+- She's visible on Zoom, Meet, and external Teams meetings, so guests will see
+  her and may ask.
+
+## What happens when
+
+| | |
 |---|---|
-| `@Krista pause` | Stops transcribing |
-| `@Krista resume` | Starts transcribing again |
-| `@Krista opt out` | Keeps the whole meeting off the record |
-| `@Krista remove last 5 minutes` | Deletes what was just said |
-| `@Krista help` | Lists the commands in the chat |
-
-Use your organization's name for the bot — whatever appears in the participant
-list.
-
-**This is the part worth remembering.** If a meeting turns sensitive, you do not
-have to remember afterwards to ask someone to delete it. Pause in the moment,
-resume when you're past it, or remove the last few minutes if it's already been
-said.
-
-If your team has built Krista conversations, you can also ask it things —
-`@Krista schedule a follow-up meeting with John`. Ask your Krista contact what's
-available to you.
-
-## 5. Don't kick the bot out — unless you mean it
-
-If you remove Meeting Agent from a meeting, **the recording up to that point is
-discarded**, not saved. It is treated as a clear instruction that you do not want
-the content kept.
-
-That is the right move when you want nothing kept at all. If you only want part
-of the meeting off the record, `pause` or `remove last X minutes` is the better
-tool — removing the bot is all-or-nothing.
-
-If you know in advance a meeting should not be captured, keep it off the
-connected calendar or ask your admin about exclusions.
-
-## 6. Know what it does not do
-
-- It **does not join ad-hoc meetings** — only ones on a connected calendar.
-- It **does not speak** or join the spoken conversation. Chat only.
-- It **does not support WebEx or GoTo**. Those meetings are skipped.
-- It **is visible**. On Zoom, Meet, and external Teams meetings, everyone can see
-  it is there. Assume your guests will notice and ask.
-
-## Quick reference
-
-| Situation | What happens |
-|---|---|
-| Nobody admits the bot within ~5 minutes | Not recorded. Marked skipped. |
-| You remove the bot mid-meeting | Recording discarded. Nothing processed. |
-| You type `@Krista pause` | Transcription stops until you `resume`. |
-| You type `@Krista opt out` | The meeting is kept off the record. |
-| Meeting ends normally | Transcript, summary, action items. |
-| Your meeting runs past 3 hours | Captured up to 3 hours, then the bot leaves. Everything up to that point is processed. |
-| Everyone leaves but the meeting stays open | Bot leaves after a minute. |
-| The call drops or is cut short | Processed, with a note that the transcript may be incomplete. |
-| Captions were unavailable | Still transcribed, just by a different route. |
-| The link is WebEx or GoTo | Skipped — not supported. |
+| Nobody lets her in within ~5 minutes | Not recorded, marked skipped |
+| You pause her | Transcribing stops until you resume |
+| You ask her to opt out | The meeting is kept off the record |
+| You remove her | Recording discarded, nothing processed |
+| The meeting ends normally | Transcript, summary, action items |
+| The meeting runs past 3 hours | Everything up to 3 hours is captured and processed |
+| Everyone leaves, meeting stays open | She leaves after a minute |
+| The call drops early | Processed, with a note that the transcript may be incomplete |
+| Captions weren't available | Still transcribed, just a different route |
+| It's a WebEx or GoTo link | Skipped — not supported |
 
 ## Where to get help
 
-In this order:
+The help icon in Krista — the small question mark — is the quickest place to
+start, and searching it for whatever you're stuck on usually does it. There are
+short walkthrough videos on the main screen's help too.
 
-1. **The in-product help.** There's a question-mark icon on the Meeting Agent
-   screen — open it and search for the word you're stuck on. The main screen's
-   help also has walkthrough videos. Try this first; most questions are answered
-   here in seconds.
-2. **Your organization's Meeting Agent / IT contact.** They handle bot naming,
-   which meetings are captured, and whether recording is on for your team.
-3. **Krista Support**, through that contact.
+Your organization's Krista or IT contact looks after naming, which meetings are
+captured, and access. They can bring in Krista Support if anything needs going
+further.
 
 ---
 
-*Longer version: [FAQ](../04-faq.md)*
+*More questions: [the FAQ](../04-faq.md)*

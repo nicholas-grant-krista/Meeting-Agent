@@ -5,134 +5,141 @@ sources:
   - conversation-agent:README.md
   - conversation-agent:docs/workspace-platform-routing.md
   - conversation-agent:docs/meeting-bot-end-state-policy.md
+  - conversation-agent:orchestration/.../config/MeetingBotConfig.java
   - meeting-bot:README.md
   - meeting-bot:docs/transcription.md
-last-verified: 2026-08-24
+last-verified: 2026-08-25
 ---
 
 # How it works
 
-The lifecycle of a single meeting, start to finish.
+The life of a single meeting, from calendar to follow-up.
 
 ```
-  Calendar                Capture                  Post-meeting
-  ────────                ───────                  ────────────
-  Meeting                 Join / attach            Transcript
-  appears        ──►      Record            ──►    Summary
-  Routed to a             Capture speakers,        Action items
-  capture route           chat, captions           Follow-up actions
+  Calendar                Capture                  Afterwards
+  ────────                ───────                  ──────────
+  Meeting                 Krista joins             Transcript
+  appears        ──►      and listens       ──►    Summary
+  Routed to a             Speakers, chat,          Action items
+  capture route           captions                 Follow-up actions
 ```
 
 ## 1. The meeting is picked up
 
-Meeting Agent reads your connected calendar. When a meeting appears, it is
-**routed** — assigned to a capture route based on which bucket it falls into:
+Krista watches your connected calendar. When a meeting appears, it's sorted into
+one of two groups:
 
-- **Internal** — a Microsoft Teams meeting whose organizer is on one of your
-  organization's domains.
+- **Internal** — a Microsoft Teams meeting organized by someone on one of your own
+  domains.
 - **External** — everything else. A Google Meet or Zoom link, or a Teams meeting
-  organized by someone outside your organization.
+  organized outside your organization.
 
-Each bucket resolves independently to native Teams capture, the Krista Bot, or
-off. Recurring series appear in Meeting Agent well in advance so you can see
-what is coming, but capture for a given meeting is arranged **on the day it
-runs**.
+Each group is handled independently: captured through Teams directly, captured by
+Krista joining as a participant, or not captured at all. Recurring series appear
+well in advance so you can see what's coming, and capture itself is arranged on
+the day each meeting runs.
 
-> **Changing routing takes effect on future meetings, not past ones.** If you
-> change a bucket's route, every meeting that has not yet started is re-routed on
-> the next scheduling cycle — no restart or waiting period. Meetings that have
-> already run are frozen and are never re-routed, so your history always reflects
-> what actually happened.
+> Changing how a group is handled applies to future meetings, not past ones.
+> Anything that hasn't started yet picks up the change within about a minute —
+> no restart, no waiting period. Meetings that have already happened are left
+> exactly as they were, so your history always reflects what really took place.
 
 ## 2. The meeting is captured
 
-### If routed to the Krista Bot
+### When Krista joins as a participant
 
-The bot is prepared **10 minutes before** the scheduled start and joins about
-**60 seconds before** the meeting begins, so recording is already running when
-the first person speaks. From your attendees' point of view it is a participant
-in the roster with a display name you control — by default `Krista (<Your
-Workspace Name>)`, which is how attendees can tell which team's bot joined.
+She gets ready about **10 minutes** before the scheduled start and joins around
+**60 seconds** beforehand, so she's already listening when the first person
+speaks. Your attendees see her in the participant list under a name you choose —
+by default `Krista (Your Workspace Name)`, which helps people tell which team's
+Krista has joined.
 
-If there is a lobby, it waits **up to 5 minutes** to be admitted. After that it
-gives up and the meeting is marked skipped.
+If there's a lobby, she waits **up to 5 minutes** to be let in. After that she
+leaves, and the meeting is marked as skipped.
 
-Once admitted, it records and captures participants, chat, and live captions. It
-reports progress continuously, so the meeting's status is visible while it is
-still running.
+Once she's in, she records and picks up participants, chat, and live captions,
+reporting as she goes so you can see the meeting's status while it's still
+running.
 
-The bot leaves when:
+She'll leave when:
 
-| Trigger | Timing |
+| | |
 |---|---|
-| The host ends the meeting | Immediately |
-| Everyone else leaves | After **1 minute** alone |
+| The host ends the meeting | Straight away |
+| Everyone else leaves | After **1 minute** on her own |
 | Nobody ever joins | After **5 minutes** |
-| Sustained silence | After **5 minutes** of dead air |
-| Maximum duration reached | At **3 hours** |
+| The room goes quiet | After **5 minutes** of silence |
+| The meeting runs long | At **3 hours** |
 
-All five end the meeting normally — you get a transcript, summary, and action
-items for what was captured.
+All five wrap up normally — you'll get a transcript, summary, and action items
+for what was captured.
 
-### If routed to native Teams
+### When capture runs through Teams
 
-Capture happens through Microsoft Teams directly. No extra participant appears in
-the meeting and there is no lobby to clear. This route only works for Teams
-meetings your own organization hosts.
+For internal Teams meetings, capture happens through Microsoft Teams itself. No
+extra participant appears, and there's no lobby to clear. This route is available
+for meetings your own organization hosts.
 
 ## 3. Speech becomes a transcript
 
-Meeting Agent prefers the **meeting platform's own captions**. They are produced
-by the platform's speech recognition, already attributed to speakers, and cost
+Krista prefers the meeting platform's **own live captions**. They're produced by
+the platform's speech recognition, already attributed to speakers, and cost
 nothing extra.
 
-If captions could not be turned on, or produced nothing, Meeting Agent falls back
-to transcribing the recorded audio itself. The result is the same kind of
-transcript; it simply takes a different path to get there.
+If captions aren't available, she transcribes the recorded audio herself instead.
+You get the same kind of transcript; she simply takes a different route to it.
 
-The practical consequence for you: **meetings where captions work produce better
-and faster results.** See [meeting hygiene](../03-operating/meeting-hygiene.md).
+What this means in practice: **meetings where captions are on give you better
+results, sooner.** See
+[getting the best from Krista](../03-operating/meeting-hygiene.md).
 
-How captions are structured differs by platform, which affects how granular the
-transcript looks:
+Each platform structures captions differently, which shows up in how the
+transcript is grouped:
 
-| Platform | Transcript granularity |
+| Platform | How the transcript is grouped |
 |---|---|
-| Microsoft Teams | Per utterance — the finest of the three |
-| Google Meet | Per speaker turn — one long block per uninterrupted speaker |
-| Zoom | Per speaker turn |
+| Microsoft Teams | One segment per utterance — the finest of the three |
+| Google Meet | One block per speaker turn |
+| Zoom | One block per speaker turn |
 
-All three are accurate. Meet and Zoom simply group more sentences into each
+All three are accurate. Meet and Zoom simply gather more sentences into each
 block.
 
-## 4. Post-meeting actions run
+## 4. The follow-up runs
 
-With a transcript in hand, the post-meeting workflow runs: transcript stored,
-knowledge ingested, summary generated, action items extracted, and the follow-up
-actions configured for your workspace executed.
+With a transcript in hand, the rest follows: the transcript is stored, knowledge
+is taken in, a summary is generated, action items are pulled out, and whatever
+follow-up your team has set up is carried through.
 
-## What happens when something goes wrong
+## Along the way — people stay in control
 
-Meeting Agent distinguishes deliberately between *"this could never have worked"*
-and *"this broke."* You will see the difference in the meeting's status.
+Anyone in the meeting can talk to Krista in the chat. `@Krista pause` and
+`@Krista resume` bracket anything that shouldn't be captured, `@Krista remove last
+5 minutes` deals with something already said, and `@Krista opt out` keeps the
+whole meeting off the record. She explains these when she joins.
+
+## When things don't go to plan
+
+Krista distinguishes between *"there was correctly nothing to capture"* and
+*"something went wrong"* — and you'll see the difference in the meeting's status.
 
 | What happened | Outcome |
 |---|---|
-| Meeting ended normally | Full processing |
-| Bot was interrupted mid-call | Processed, with a notice that the transcript may be incomplete |
-| Bot was removed by a participant | **Skipped** — partial capture is discarded, not processed |
-| Bot was never admitted from the lobby | **Skipped** — nothing was recorded |
-| Meeting Agent was turned off for this meeting | **Skipped** |
-| Meeting link was not a supported platform | **Skipped** |
-| The bot hit a technical fault | **Failed** — flagged for attention, and replayable |
+| The meeting ended normally | Processed in full |
+| She was interrupted part-way | Processed, with a note that the transcript may be incomplete |
+| Someone removed her | **Skipped** — anything partial is discarded rather than kept |
+| Nobody let her in | **Skipped** — nothing was recorded |
+| Capture was off for this meeting | **Skipped** |
+| The link wasn't a supported platform | **Skipped** |
+| Something failed technically | **Failed** — flagged for attention, and can be run again |
 
-"Skipped" means there was correctly nothing to process. "Failed" means something
-went wrong that Krista should look at. See
-[troubleshooting](../05-troubleshooting.md) for what to do about each.
+Skipped means there was genuinely nothing to process. Failed means something Krista
+should look into. [Troubleshooting](../05-troubleshooting.md) covers what to do
+with each.
 
-> Note the deliberate choice on **removal**: if someone kicks the bot out of a
-> meeting, any partial recording is discarded rather than processed. Removing the
-> bot is treated as a clear instruction not to keep the content.
+> One deliberate choice worth knowing: if someone removes Krista from a meeting,
+> anything recorded up to that point is discarded rather than processed. Removing
+> her is treated as a clear signal that the content shouldn't be kept.
 
 ---
 

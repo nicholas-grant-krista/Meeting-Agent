@@ -22,7 +22,7 @@ meetings.
    replayable. A steady trickle is worth raising with Krista; a spike is worth
    raising immediately.
 2. **Any recurring meeting skipped every time?** Almost always non-admission on a
-   series where nobody admits the bot. Fix the habit or change the routing —
+   series where nobody admits Krista. Fix the habit or change the routing —
    the system will not fix itself.
 3. **Any unexpected skips?** A meeting you thought was in scope but was not
    captured usually means no licensed user was on the invite, or the platform is
@@ -38,15 +38,15 @@ This distinction is the core of day-2 triage.
 | Outcome | Meaning | Your action |
 |---|---|---|
 | **Completed** | Processed normally | None |
-| **Completed, with a notice** | Processed, but the transcript may be incomplete — the bot was interrupted mid-call | Spot-check the transcript if the meeting mattered |
+| **Completed, with a notice** | Processed, but the transcript may be incomplete — Krista was interrupted mid-call | Spot-check the transcript if the meeting mattered |
 | **Skipped** | There was correctly nothing to process | Check the reason. Usually yours to fix, not Krista's. |
-| **Failed** | A technical fault | Replayable. Raise with Krista if it repeats. |
+| **Failed** | A technical fault | Replayable. Raise with Krista Support if it repeats. |
 
 ### Skip reasons and who owns them
 
 | Reason | Owner | Fix |
 |---|---|---|
-| Bot was never admitted | You | Admit the bot, or change routing |
+| Bot was never admitted | You | Admit Krista, or change routing |
 | Bot was removed by a participant | You | Expected if intentional |
 | Meeting Agent was turned off for this meeting | You | Expected |
 | Not scheduled to join | You | Check calendar connection and licensed attendees |
@@ -58,7 +58,7 @@ This distinction is the core of day-2 triage.
 Routing. Takes effect on the next scheduling cycle. Completed and in-progress
 meetings are never re-routed.
 
-**Renaming the bot** — same screen, Krista Bot Identity card. Only affects bots
+**Renaming Krista** — same screen, Krista Bot Identity card. Only affects bots
 scheduled after the change.
 
 **Adding a user** — decide licensed vs Observer first. Licensed means their
@@ -86,11 +86,11 @@ Handle yourself:
 - "Why wasn't this recorded?" — work the
   [troubleshooting](../05-troubleshooting.md) list first
 
-Raise with Krista:
+Raise with Krista Support:
 
 - Repeated **failed** meetings
 - Transcripts that are wrong rather than merely coarse — wrong speakers, missing
-  large sections of a meeting the bot definitely attended
+  large sections of a meeting Krista definitely attended
 - Summary or action-item quality that does not improve after the meetings
   themselves improved
 - Anything involving your license: expiry, tier change, suspension

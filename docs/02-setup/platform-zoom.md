@@ -26,7 +26,7 @@ Zoom-specific configuration on the Krista side.
 
 ## What your users will see
 
-The bot joins as a participant. If the meeting has a waiting room, it waits there
+Krista joins as a participant. If the meeting has a waiting room, it waits there
 until admitted. If nobody admits it, the meeting is not recorded and is marked
 skipped.
 
@@ -63,7 +63,7 @@ overridable per workspace, with an optional avatar image URL. See
 
 > **OPEN —** Are there Zoom account types or meeting configurations (webinars,
 > end-to-end encrypted meetings, meetings requiring registration or
-> authentication) where the bot cannot join at all? · _ask: Meeting Agent product
+> authentication) where Krista cannot join at all? · _ask: Meeting Agent product
 > owner_
 
 ---

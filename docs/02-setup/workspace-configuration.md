@@ -97,7 +97,7 @@ Under the **Krista Bot Identity** card.
 | Field | Behaviour |
 |---|---|
 | **Bot display name** | Free text, up to 255 characters. Blank → `Krista (<Your Workspace Name>)`. |
-| **Bot avatar image URL** | A public `http(s)` URL pointing directly at an image, up to 1000 characters. Blank → the bot joins with its camera off. A live preview shows whether the URL resolves. |
+| **Bot avatar image URL** | A public `http(s)` URL pointing directly at an image, up to 1000 characters. Blank → Krista joins with her camera off. A live preview shows whether the URL resolves. |
 
 The two fields are independent — override the name and inherit the avatar, or
 the reverse.

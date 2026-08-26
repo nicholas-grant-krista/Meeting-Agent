@@ -15,7 +15,7 @@ last-verified: 2026-08-24
 **Action item** — a task extracted from a meeting, with an owner where one was
 stated. Produced by the post-meeting workflow.
 
-**Bot commands** — instructions participants can give the bot by mentioning it in
+**Bot commands** — instructions participants can give Krista by mentioning her in
 the meeting chat: `pause`, `resume`, `opt out`, `remove last X minutes`, and
 `help`. Available to anyone in the meeting.
 
@@ -62,7 +62,7 @@ Teams meetings.
 all. No bot is scheduled and post-meeting stages are cleanly skipped.
 
 **Opt out** — a chat command any participant can use to keep a meeting off the
-record. Distinct from removing the bot, which stops capture and discards what was
+record. Distinct from removing Krista, which stops capture and discards what was
 recorded up to that point.
 
 **Observer** — an unlicensed user who can view content shared with them. Consumes
@@ -81,7 +81,7 @@ knowledge ingest, summary, action items, and configured follow-up actions.
 bucket per workspace.
 
 **Skipped** — a meeting outcome meaning there was correctly nothing to process:
-nobody admitted the bot, capture was off, or the platform is unsupported.
+nobody admitted Krista, capture was off, or the platform is unsupported.
 Contrast with *failed*.
 
 **Trial (tier)** — a time-limited license with a hard expiry date that cuts both

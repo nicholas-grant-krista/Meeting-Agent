@@ -40,25 +40,25 @@ Set these on the workspace — see
 
 ## If you use the Krista Bot on Teams
 
-The bot joins as an anonymous guest. Two consequences your users should expect:
+Krista joins as an anonymous guest. Two consequences your users should expect:
 
 **It appears in the roster tagged "Unverified."** This is Teams' standard label
-for a guest who joined without signing in. It is not a warning about the bot.
+for a guest who joined without signing in. It is not a warning about Krista.
 Tell your users this in advance so it does not generate help-desk tickets.
 
 **It must be admitted from the lobby.** If your meeting policy puts guests in the
-lobby, someone has to let the bot in, every time. If nobody does, the meeting is
+lobby, someone has to let Krista in, every time. If nobody does, the meeting is
 not recorded and is marked skipped.
 
-> If you want the bot admitted automatically, that is a Teams meeting-policy
+> If you want Krista admitted automatically, that is a Teams meeting-policy
 > decision on your side about how guests are handled. Weigh it against the
 > security posture you want for actual guests, since the setting is not specific
-> to the bot.
+> to Krista.
 
 ## Transcription on Teams
 
 Meeting Agent turns on **live captions** and captures them. Any participant can
-turn captions on, so the bot does not need elevated rights.
+turn captions on, so Krista does not need elevated rights.
 
 Teams also has a separate **transcription** feature (More → Record and transcribe
 → Start transcription). **Meeting Agent deliberately does not start it**, for two
@@ -79,12 +79,12 @@ segment per utterance.
 
 ## Bot identity
 
-The bot's display name defaults to `Krista (<Your Workspace Name>)` so attendees
+Krista's display name defaults to `Krista (<Your Workspace Name>)` so attendees
 can tell which team's bot joined. Override it per workspace under
 Settings → **Meeting Bots & Assistants** → **Krista Bot Identity**. An explicit
 override is used verbatim with no workspace suffix.
 
-An avatar image URL can be set as the bot's camera tile. Leave it blank and the
+An avatar image URL can be set as Krista's camera tile. Leave it blank and the
 bot joins with its camera off.
 
 ## Watch out for: multiple bots in one meeting

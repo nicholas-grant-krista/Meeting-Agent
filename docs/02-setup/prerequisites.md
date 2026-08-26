@@ -56,9 +56,9 @@ Have answers ready. Each maps directly to a setting.
 1. **Which meetings do you want captured?** Internal only, external only, or
    both? Either bucket can be off.
 2. **Is a visible bot acceptable in customer-facing meetings?** If not, external
-   capture is not for you — the bot is always visible on Meet, Zoom, and
+   capture is not for you — Krista is always visible on Meet, Zoom, and
    Teams-as-guest.
-3. **What should the bot be called?** It defaults to `Krista (<Your Workspace
+3. **What should Krista be called?** It defaults to `Krista (<Your Workspace
    Name>)`. Many customers rename it to something their meeting guests will
    recognize.
 4. **Who are your Workspace Admins?** They can change routing, bot identity, and
@@ -68,7 +68,7 @@ Have answers ready. Each maps directly to a setting.
 
 ### Consent and notification
 
-The bot appears in the participant roster, and meeting platforms notify
+Krista appears in the participant roster, and meeting platforms notify
 participants when recording starts. That is your notification mechanism, and for
 many organizations it is not sufficient on its own.
 
@@ -90,10 +90,10 @@ and compliance function during onboarding rather than after an incident.
 |---|---|
 | Supported meeting platforms | Microsoft Teams, Google Meet, Zoom. See [capabilities matrix](../01-overview/capabilities-matrix.md). |
 | Browser access for your users | Meeting Agent's interface is web-based. |
-| Bot avatar image (optional) | A publicly reachable `http(s)` URL pointing directly at an image. If not set, the bot joins with its camera off. |
+| Bot avatar image (optional) | A publicly reachable `http(s)` URL pointing directly at an image. If not set, Krista joins with her camera off. |
 
 > **OPEN —** Are there network requirements on the customer side — allowlisted
-> domains, IP ranges, or firewall rules — for either the interface or the bot?
+> domains, IP ranges, or firewall rules — for either the interface or Krista?
 > · _ask: Meeting Agent product owner_
 
 ## Readiness checklist

@@ -60,13 +60,13 @@ the number before your first one.
 
 ## Bot identity
 
-**Rename the bot for external meetings.** The default tells your guests which
+**Rename Krista for external meetings.** The default tells your guests which
 workspace joined, which is useful internally and meaningless to a customer. Give
-it a name that explains itself: `Acme Meeting Notes`, not `Krista (ACME-PROD-2)`.
+her a name that explains itself: `Acme Meeting Notes`, not `Krista (ACME-PROD-2)`.
 
-**Set an avatar.** A blank avatar means the bot joins with its camera off — a
-silent black tile. A small logo makes it obviously a tool rather than an
-unexplained participant.
+**Set an avatar.** With no avatar she joins with her camera off, which shows as a
+silent black tile. A small logo helps people recognise her at a glance instead of
+wondering who has joined.
 
 **Do not rename frequently.** Only newly scheduled bots pick up the change, so
 during a rename different meetings show different names for a while.
@@ -106,12 +106,12 @@ Decide it once, in writing, rather than per-meeting under pressure.
 **Name the meetings that must never be captured.** HR, legal, medical,
 privileged. Keep them off the connected calendar or in a bucket routed to `None`.
 
-**Teach "remove the bot" as the escalation.** When a meeting turns sensitive
-unexpectedly, removing Meeting Agent discards the partial recording. Everyone
+**Teach "remove Krista" as the escalation.** When a meeting turns sensitive
+unexpectedly, removing her discards the partial recording. Everyone
 should know this is available and what it does.
 
 **Own the "why wasn't this recorded?" question internally.** Nearly always the
-answer is one of: nobody admitted the bot, no licensed user was on the invite,
+answer is one of: nobody admitted Krista, no licensed user was on the invite,
 the meeting was not on a connected calendar, or the platform is not supported.
 Your admins should be able to answer without opening a ticket — see
 [troubleshooting](../05-troubleshooting.md).

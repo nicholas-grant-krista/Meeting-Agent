@@ -11,7 +11,7 @@ last-verified: 2026-08-24
 
 # Capabilities matrix
 
-The short answer to "does it do X?"
+The short answer to "does she do X?"
 
 ## Meeting platforms
 
@@ -24,7 +24,7 @@ The short answer to "does it do X?"
 | **GoTo Meeting** | ❌ No | Meetings are skipped as an unsupported platform |
 | Anything else | ❌ No | Skipped |
 
-**Yes, it joins Zoom meetings.** This comes up constantly, so to be unambiguous:
+**Yes, she joins Zoom meetings.** This comes up constantly, so to be unambiguous:
 Zoom is fully supported through the Krista Bot, including Zoom meetings hosted by
 organizations other than yours. You do not need to install anything in Zoom, and
 the meeting host does not need to be a Krista customer.
@@ -55,7 +55,7 @@ and no one is paged about it.
 | Attend scheduled meetings automatically | ✅ |
 | Record audio and video | ✅ |
 | Produce a speaker-attributed transcript | ✅ |
-| Fall back to its own transcription when platform captions fail | ✅ |
+| Fall back to her own transcription when platform captions fail | ✅ |
 | Generate meeting summaries | ✅ |
 | Extract action items | ✅ |
 | Run configured follow-up actions after the meeting | ✅ |
@@ -71,7 +71,7 @@ and no one is paged about it.
 | | |
 |---|---|
 | Join ad-hoc meetings that are not on a connected calendar | ❌ |
-| Speak, or join the spoken conversation | ❌ — it reads meeting chat, but never talks |
+| Speak, or join the spoken conversation | ❌ — she reads meeting chat, but never talks |
 | Join a meeting nobody admits from the lobby | ❌ — by design |
 | Record when a host has disabled recording by policy | ❌ |
 | Support WebEx, GoTo, or other platforms | ❌ |
@@ -81,12 +81,12 @@ and no one is paged about it.
 
 ## Things worth knowing before you commit
 
-**The bot is visible.** On Teams-via-bot, Meet, and Zoom, attendees see a
+**Krista is visible.** On Teams-via-bot, Meet, and Zoom, attendees see a
 participant in the roster. If you need capture that no one can see, the only
 route that provides it is native Teams on your own meetings.
 
-**The bot must be admitted.** Waiting rooms and lobbies apply to it exactly as
-they do to any guest. Meetings where nobody admits it are not recorded. This is
+**Krista must be admitted.** Waiting rooms and lobbies apply to her exactly as
+they do to any guest. Meetings where nobody admits her are not recorded. This is
 the single most common reason a customer says "it didn't work."
 
 **One bot per workspace, per meeting.** If several workspaces in your
@@ -99,7 +99,7 @@ workspaces that do not need it. See
 platform's own captions. Meetings where captions cannot be enabled still work,
 but take a slower and more expensive path.
 
-**Meetings are capped at 3 hours.** The bot leaves at that point and the meeting
+**Meetings are capped at 3 hours.** Krista leaves at that point and the meeting
 is processed normally — you get everything up to the cap, not nothing. Plan
 around it if you run all-day sessions. See
 [limits and quotas](../99-reference/limits-and-quotas.md).

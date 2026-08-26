@@ -5,102 +5,98 @@ sources:
   - conversation-agent:README.md
   - conversation-agent:release.info
   - meeting-bot:README.md
-last-verified: 2026-08-24
+  - meeting-bot:src/observers/chat.ts
+last-verified: 2026-08-25
 ---
 
-# What is Meeting Agent?
+# Meet Krista
 
-Meeting Agent captures your meetings and turns them into work that actually gets
-done.
+Krista joins your meetings, listens, and turns what happened into work that
+actually moves.
 
-It attends the meetings you tell it to, records and transcribes them, and then —
-this is the part that distinguishes it from a notetaker — runs **post-meeting
-actions**: summaries, action items, and follow-up work routed into the systems
-your team already uses.
+She attends the meetings you'd like her in, records and transcribes them, and
+then — this is what sets her apart from a notetaker — carries the outcome
+forward: summaries, action items, and follow-up work routed into the systems your
+team already uses.
 
-## The problem it solves
+## The problem she solves
 
-Most meeting tools stop at the transcript. Someone still has to read it, decide
-what mattered, and go do something about it. In practice that step is skipped,
-and the recording becomes an archive nobody opens.
+Most meeting tools stop at the transcript. Someone still has to read it, work out
+what mattered, and go and do something about it. In practice that step rarely
+happens, and the recording becomes an archive nobody opens.
 
-Meeting Agent is built around the assumption that the transcript is an
-*intermediate artifact*, not the deliverable. The deliverable is the follow-up.
+Krista is built on the idea that the transcript is a step along the way, not the
+result. The result is the follow-up.
 
-## What it does
+## How she works, briefly
 
-**Before the meeting** — watches your connected calendar, decides which meetings
-are in scope, and prepares to capture them.
+**Before the meeting** — she watches your connected calendar and gets ready for
+the meetings that are in scope.
 
-**During the meeting** — captures the conversation, either by joining as a
-participant or by attaching to Microsoft Teams natively. It captures who spoke,
-what was said, participants, and chat.
+**During the meeting** — she captures the conversation, either by joining as a
+participant or by working through Microsoft Teams directly. She picks up who
+spoke, what was said, who attended, and the chat.
 
-**After the meeting** — produces a transcript, then runs the post-meeting
-workflow: summarize, extract action items, and execute the follow-up actions
-configured for your workspace.
+**After the meeting** — she produces a transcript, then summarizes, pulls out
+action items, and runs whatever follow-up your team has set up.
 
-## The two capture routes
+## Two ways she can join
 
-This is the single most important thing to understand, because it determines
-what your attendees see and what you need to configure.
+This is the one thing worth understanding early, because it shapes what your
+attendees see.
 
-| | **Native Teams** | **Krista Bot** |
+| | **Through Teams** | **As a participant** |
 |---|---|---|
-| How it captures | Attaches through Microsoft Teams itself | Joins the call as a participant |
-| Do attendees see it? | No extra participant | **Yes** — a named participant in the roster |
-| Works with | Teams meetings hosted by *your* organization | Teams, Google Meet, and Zoom — including meetings hosted by *other* organizations |
-| Needs to be admitted? | No | Yes, if there is a lobby or waiting room |
+| How she captures | Directly through Microsoft Teams | She joins the call like a guest |
+| Do attendees see her? | No extra participant | Yes — she's in the participant list |
+| Works with | Teams meetings your organization hosts | Teams, Google Meet, and Zoom — including other companies' meetings |
+| Needs letting in? | No | Yes, if there's a lobby |
 
-You are not forced to pick one. Meeting Agent routes each meeting to one of these
-based on two **buckets** you configure independently — internal meetings and
-external meetings. A common setup is native Teams for your own meetings and the
-Krista Bot for everything else. See
-[Workspace configuration](../02-setup/workspace-configuration.md).
+You don't have to choose just one. Krista handles your own internal meetings and
+your external ones separately, so a common setup is Teams directly for internal
+meetings and joining as a participant for everything else. Either can also be
+turned off, if you'd rather she didn't cover that kind of meeting at all.
 
-Either bucket can also be set to **off**, meaning that workspace does not capture
-that class of meeting at all.
+## Your people stay in control
 
-## What it is not
+Anyone in a meeting can talk to Krista in the chat:
 
-Being direct about this up front saves a difficult conversation in week three.
-
-- **It is not a compliance recording system.** It is not designed to guarantee
-  capture of every meeting for regulatory retention.
-- **It does not speak.** It never joins the spoken conversation or interrupts.
-  It does read the meeting chat, and participants can direct it there — see
-  below.
-- **It does not work on every platform.** Teams, Google Meet, and Zoom are
-  supported. WebEx, GoTo, and others are not — see the
-  [capabilities matrix](capabilities-matrix.md).
-- **It does not bypass a host who refuses it.** If nobody admits the bot from the
-  lobby, the meeting is not recorded. This is by design.
-
-## Participants can control it from the meeting chat
-
-Anyone in the meeting can direct the bot by mentioning it in chat:
-
-| Command | Effect |
+| Ask her | And she'll |
 |---|---|
-| `@Krista pause` / `@Krista resume` | Stop and restart transcription mid-meeting |
+| `@Krista pause` / `@Krista resume` | Stop and restart transcribing |
 | `@Krista opt out` | Keep the meeting off the record |
-| `@Krista remove last X minutes` | Delete content already captured |
-| `@Krista help` | List the commands in the chat |
+| `@Krista remove last 5 minutes` | Delete what was just said |
+| `@Krista help` | List these in the chat |
 
-This matters more than it first appears. It means privacy control sits with the
-people in the room, in the moment — nobody has to remember afterwards to ask an
-administrator to delete something. The bot posts a welcome message when it joins
-explaining these, so participants are told rather than expected to know.
+This matters more than it might first appear. Privacy control sits with the people
+in the room, at the moment they need it — nobody has to remember afterwards to ask
+an administrator to remove something. She introduces herself when she joins and
+explains these, so people are told rather than expected to know.
 
-If your organization has built Krista conversations, the same chat channel can
-also answer questions and trigger workflows.
+Where a team has built Krista conversations, that same chat can answer questions
+and start workflows.
 
-## Where it fits
+## What to expect
 
-Meeting Agent runs on the Krista platform, so its output can feed anything Krista
-can reach — your knowledge base, ticketing, CRM, or a custom workflow. For most
-customers the starting point is much simpler: accurate summaries and action items
-delivered reliably, to the right people, without anyone having to ask.
+Being straight about this early tends to save a conversation later.
+
+- **She doesn't speak.** She never joins the spoken conversation or interrupts —
+  everything she does is through chat.
+- **She joins meetings from a calendar.** Ad-hoc meetings won't include her.
+- **She covers Teams, Google Meet, and Zoom.** WebEx and GoTo aren't supported —
+  see the [capabilities matrix](capabilities-matrix.md).
+- **She needs letting in.** If nobody admits her from the lobby, the meeting isn't
+  recorded. That's deliberate: she doesn't join anything she hasn't been invited
+  into.
+- **She isn't a compliance recording system.** If you have regulatory retention
+  obligations, those are worth raising early.
+
+## Where she fits
+
+Krista runs on the Krista platform, so what she produces can feed anything Krista
+can reach — your knowledge base, ticketing, CRM, or a workflow of your own. For
+most teams the starting point is simpler than that: accurate summaries and action
+items, arriving reliably, without anyone having to chase them.
 
 ---
 

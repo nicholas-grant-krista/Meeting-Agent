@@ -26,16 +26,30 @@ wrong sentence here becomes a wrong sentence in a customer's onboarding call.
 
 ## Voice
 
-Write for the reader named in the page's `audience:` field.
+Write for the reader named in the page's `audience:` field. This is customer-facing
+writing, so the tone matters as much as the facts.
 
-- **Plain language over product vocabulary.** "The bot joins your meeting and
-  records it," not "the KRISTA_BOT handler is deployed as an ephemeral job."
-- **Say what is not supported, plainly.** A customer who finds a gap themselves
-  in week three trusts the document less than one who read about it in week one.
-- **No hedging on facts we know.** If it works, say it works. Reserve
-  qualification for things that are genuinely conditional.
-- **Second person for instructions.** "Set the internal bucket to…", not "The
-  admin should set…".
+**Krista is "she."** She joins your meeting, she listens, she'll pause when you ask
+her to. Not "it," and not "the bot" where "Krista" reads naturally. Reserve *the
+Krista Bot* for the moments you genuinely mean the capture route rather than
+Krista herself.
+
+**Be welcoming.** The reader is often new, sometimes a little wary of a recorder
+in the room. Write like a helpful colleague showing them round, not like a manual.
+Warmth costs nothing and changes how the whole guide lands.
+
+**Offer, don't instruct.** "You can ask her to pause at any time" rather than "Type
+this command." "Many teams find it helps to…" rather than "You must…". The reader
+decides; we're here to make the choice easy. Avoid stacked imperatives, "please",
+and anything that reads as telling a customer off.
+
+**Plain language over product vocabulary.** "Krista joins your meeting and records
+it," not "the KRISTA_BOT handler is deployed as an ephemeral job."
+
+**Be straight about limits, kindly.** A customer who discovers a gap themselves in
+week three trusts the guide less than one who read about it in week one. Frame it
+as what to expect rather than what she can't do — and never hedge a fact we
+actually know. Exact numbers stay exact; only the framing softens.
 
 ## Review
 

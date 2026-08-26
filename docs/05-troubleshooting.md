@@ -54,11 +54,11 @@ Skipped is usually correct behaviour. Read the reason.
 
 ### "Never admitted"
 
-The bot reached the meeting and waited **about 5 minutes**, but nobody let it in.
+Krista reached the meeting and waited **about 5 minutes**, but nobody let her in.
 
-That window is the thing to check first. The bot arrives just before the
+That window is the thing to check first. Krista arrives just before the
 scheduled start, so a meeting that habitually begins ten minutes late will lose
-the bot before anyone thinks to admit it — the host isn't refusing, they're just
+Krista before anyone thinks to admit her — the host isn't refusing, they're just
 late.
 
 - **One-off:** expected. Nothing to fix.
@@ -72,13 +72,13 @@ This is the #1 real-world cause of "it didn't work."
 
 ### "Removed by a participant"
 
-Someone kicked the bot out. The partial recording was discarded by design.
+Someone kicked Krista out. The partial recording was discarded by design.
 
 If intentional, nothing to fix. If not, the person who removed it probably didn't
-know what it was — which is a naming and communication problem. Give the bot a
+know what it was — which is a naming and communication problem. Give Krista a
 self-explanatory name.
 
-### Content is missing, and nobody removed the bot
+### Content is missing, and nobody removed Krista
 
 Check whether a participant used the in-meeting chat controls. Anyone can type
 `@<bot> pause`, `@<bot> opt out`, or `@<bot> remove last X minutes`, and each does
@@ -106,9 +106,9 @@ A technical fault. These are replayable and Krista should see them.
 
 | What it means | What to do |
 |---|---|
-| The bot could not navigate the meeting platform's interface — a sign-in page, a consent screen, or a platform UI change | Raise with Krista. If it affects one platform across many meetings, say so — that pattern matters. |
-| The bot hit a fault before reaching the call | Raise with Krista, with date and platform |
-| The bot was lost mid-call | Raise with Krista — content may be recoverable |
+| Krista could not navigate the meeting platform's interface — a sign-in page, a consent screen, or a platform UI change | Raise with Krista Support. If it affects one platform across many meetings, say so — that pattern matters. |
+| Krista hit a fault before reaching the call | Raise with Krista Support, with date and platform |
+| Krista was lost mid-call | Raise with Krista Support — content may be recoverable |
 | An unrecognized state | Always raise. This is a defect. |
 
 **One failure on one meeting** — note it and watch. **Repeated failures, or a

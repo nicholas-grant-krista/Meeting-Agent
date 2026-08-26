@@ -20,11 +20,11 @@ last-verified: 2026-08-25
 
 | Behaviour | Default |
 |---|---|
-| **Maximum meeting duration** | **3 hours.** The bot leaves and the meeting is processed normally. |
-| **Silence timeout** | **5 minutes** of sustained dead air ends the bot's attendance. |
-| **Waiting room / lobby wait** | **5 minutes.** If nobody admits the bot in that time, the meeting is marked skipped as never admitted. |
-| **Nobody joins the meeting** | The bot leaves after **5 minutes**. |
-| **Everyone else leaves** | The bot leaves after **1 minute**. |
+| **Maximum meeting duration** | **3 hours.** Krista leaves and the meeting is processed normally. |
+| **Silence timeout** | **5 minutes** of sustained dead air ends Krista's attendance. |
+| **Waiting room / lobby wait** | **5 minutes.** If nobody admits Krista in that time, the meeting is marked skipped as never admitted. |
+| **Nobody joins the meeting** | Krista leaves after **5 minutes**. |
+| **Everyone else leaves** | Krista leaves after **1 minute**. |
 | **Bot prepared before start** | **10 minutes** before the scheduled start time. |
 | **Bot joins** | **60 seconds** before the scheduled start, to reduce dead air at the top of the recording. |
 
@@ -37,7 +37,7 @@ captured. If you routinely run longer sessions, raise it with your TAM before yo
 rely on it.
 
 **The 5-minute lobby wait.** If your meetings habitually start late and the host
-admits guests only once they arrive, the bot may have already given up. Admitting
+admits guests only once they arrive, Krista may have already given up. Admitting
 it promptly is the fix; see
 [meeting hygiene](../03-operating/meeting-hygiene.md).
 
@@ -114,7 +114,7 @@ normal meeting takes.
 These come from the meeting platforms, not from Meeting Agent:
 
 - **Lobby and waiting-room policies** — set by the host or their organization. If
-  the bot is not admitted within the wait window, it cannot record.
+  she is not admitted within the wait window, it cannot record.
 - **Host recording restrictions** — a host who has disabled recording by policy
   prevents capture.
 - **Caption availability** — where a platform or host prevents captions, Meeting

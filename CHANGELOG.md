@@ -61,3 +61,15 @@ the Meeting Agent release they document.
 - Chat commands added to `meeting-hygiene.md` as the end-user privacy controls,
   to the glossary, and to `05-troubleshooting.md` as a cause of missing content
   that is not a fault.
+
+### Changed — voice
+- **Krista is now "she" throughout.** She joins, she listens, she'll pause when
+  asked. Applied across all 20 pages; the voice rule is recorded in
+  CONTRIBUTING.md so it holds.
+- **Warmer, less prescriptive tone**, with the deepest rework on the pages
+  customers actually read: the FAQ (retitled "Questions people ask"),
+  `meeting-hygiene.md`, `what-is-meeting-agent.md` ("Meet Krista"), and
+  `how-it-works.md`. Instructions became offers — "you can ask her to pause"
+  rather than "type this command".
+- Disambiguated **Krista the company** from **Krista herself** where the two
+  collided: "raise with Krista" is now "raise with Krista Support".
