@@ -67,13 +67,33 @@ Being direct about this up front saves a difficult conversation in week three.
 
 - **It is not a compliance recording system.** It is not designed to guarantee
   capture of every meeting for regulatory retention.
-- **It is not a live assistant.** It does not participate in the conversation,
-  answer questions in the room, or take instructions mid-meeting.
+- **It does not speak.** It never joins the spoken conversation or interrupts.
+  It does read the meeting chat, and participants can direct it there — see
+  below.
 - **It does not work on every platform.** Teams, Google Meet, and Zoom are
   supported. WebEx, GoTo, and others are not — see the
   [capabilities matrix](capabilities-matrix.md).
 - **It does not bypass a host who refuses it.** If nobody admits the bot from the
   lobby, the meeting is not recorded. This is by design.
+
+## Participants can control it from the meeting chat
+
+Anyone in the meeting can direct the bot by mentioning it in chat:
+
+| Command | Effect |
+|---|---|
+| `@Krista pause` / `@Krista resume` | Stop and restart transcription mid-meeting |
+| `@Krista opt out` | Keep the meeting off the record |
+| `@Krista remove last X minutes` | Delete content already captured |
+| `@Krista help` | List the commands in the chat |
+
+This matters more than it first appears. It means privacy control sits with the
+people in the room, in the moment — nobody has to remember afterwards to ask an
+administrator to delete something. The bot posts a welcome message when it joins
+explaining these, so participants are told rather than expected to know.
+
+If your organization has built Krista conversations, the same chat channel can
+also answer questions and trigger workflows.
 
 ## Where it fits
 

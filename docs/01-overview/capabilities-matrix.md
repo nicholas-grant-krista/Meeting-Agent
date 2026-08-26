@@ -62,13 +62,16 @@ and no one is paged about it.
 | Route different meeting types differently (internal vs external) | ✅ |
 | Let a workspace opt out of recording entirely | ✅ |
 | Per-workspace bot name and avatar | ✅ |
+| Respond to chat commands from participants (`pause`, `resume`, `opt out`, `remove last X minutes`, `help`) | ✅ |
+| Post a welcome message explaining how to opt out | ✅ |
+| Answer questions and trigger workflows from meeting chat | ✅ — where the customer has built Krista conversations |
 
 ## What Meeting Agent does not do
 
 | | |
 |---|---|
 | Join ad-hoc meetings that are not on a connected calendar | ❌ |
-| Participate in the conversation or answer questions live | ❌ |
+| Speak, or join the spoken conversation | ❌ — it reads meeting chat, but never talks |
 | Join a meeting nobody admits from the lobby | ❌ — by design |
 | Record when a host has disabled recording by policy | ❌ |
 | Support WebEx, GoTo, or other platforms | ❌ |

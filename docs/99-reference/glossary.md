@@ -15,6 +15,10 @@ last-verified: 2026-08-24
 **Action item** — a task extracted from a meeting, with an owner where one was
 stated. Produced by the post-meeting workflow.
 
+**Bot commands** — instructions participants can give the bot by mentioning it in
+the meeting chat: `pause`, `resume`, `opt out`, `remove last X minutes`, and
+`help`. Available to anyone in the meeting.
+
 **Bucket** — one of the two classes every meeting falls into: **internal** or
 **external**. Each is routed independently. Bucket membership is determined by
 the product; what happens to each bucket is what you configure.
@@ -56,6 +60,10 @@ Teams meetings.
 
 **None** — a routing value meaning this workspace does not capture that bucket at
 all. No bot is scheduled and post-meeting stages are cleanly skipped.
+
+**Opt out** — a chat command any participant can use to keep a meeting off the
+record. Distinct from removing the bot, which stops capture and discards what was
+recorded up to that point.
 
 **Observer** — an unlicensed user who can view content shared with them. Consumes
 no seat, calendar not synced, and their presence on an invitation does **not**

@@ -10,8 +10,8 @@ last-verified: 2026-08-24
 # Meeting hygiene — for everyone
 
 Meeting Agent joins your meetings and turns them into notes, summaries, and
-action items. Five habits make the difference between output you trust and output
-you ignore.
+action items. A few habits make the difference between output you trust and
+output you ignore.
 
 ## 1. Let the bot in
 
@@ -53,24 +53,48 @@ The transcript records who spoke. It cannot record what you meant.
 - Say action items out loud with an owner: "Priya will send the revised quote by
   Thursday." That is what turns into a tracked action item.
 
-## 4. Don't kick the bot out — unless you mean it
+## 4. Learn the chat commands — they're your privacy controls
+
+You can direct Meeting Agent from the **meeting chat** by mentioning it by name.
+It never speaks, but it reads messages addressed to it.
+
+| Type this in the chat | What happens |
+|---|---|
+| `@Krista pause` | Stops transcribing |
+| `@Krista resume` | Starts transcribing again |
+| `@Krista opt out` | Keeps the whole meeting off the record |
+| `@Krista remove last 5 minutes` | Deletes what was just said |
+| `@Krista help` | Lists the commands in the chat |
+
+Use your organization's name for the bot — whatever appears in the participant
+list.
+
+**This is the part worth remembering.** If a meeting turns sensitive, you do not
+have to remember afterwards to ask someone to delete it. Pause in the moment,
+resume when you're past it, or remove the last few minutes if it's already been
+said.
+
+If your team has built Krista conversations, you can also ask it things —
+`@Krista schedule a follow-up meeting with John`. Ask your Krista contact what's
+available to you.
+
+## 5. Don't kick the bot out — unless you mean it
 
 If you remove Meeting Agent from a meeting, **the recording up to that point is
 discarded**, not saved. It is treated as a clear instruction that you do not want
 the content kept.
 
-That is the right behaviour when a meeting turns sensitive mid-way — removing the
-bot is the correct move. Just know it is all-or-nothing: you cannot remove it and
-keep the first half.
+That is the right move when you want nothing kept at all. If you only want part
+of the meeting off the record, `pause` or `remove last X minutes` is the better
+tool — removing the bot is all-or-nothing.
 
 If you know in advance a meeting should not be captured, keep it off the
 connected calendar or ask your admin about exclusions.
 
-## 5. Know what it does not do
+## 6. Know what it does not do
 
 - It **does not join ad-hoc meetings** — only ones on a connected calendar.
-- It **does not participate**. It will not answer questions or take instructions
-  during the call.
+- It **does not speak** or join the spoken conversation. Chat only.
 - It **does not support WebEx or GoTo**. Those meetings are skipped.
 - It **is visible**. On Zoom, Meet, and external Teams meetings, everyone can see
   it is there. Assume your guests will notice and ask.
@@ -81,6 +105,8 @@ connected calendar or ask your admin about exclusions.
 |---|---|
 | Nobody admits the bot within ~5 minutes | Not recorded. Marked skipped. |
 | You remove the bot mid-meeting | Recording discarded. Nothing processed. |
+| You type `@Krista pause` | Transcription stops until you `resume`. |
+| You type `@Krista opt out` | The meeting is kept off the record. |
 | Meeting ends normally | Transcript, summary, action items. |
 | Your meeting runs past 3 hours | Captured up to 3 hours, then the bot leaves. Everything up to that point is processed. |
 | Everyone leaves but the meeting stays open | Bot leaves after a minute. |
@@ -88,10 +114,17 @@ connected calendar or ask your admin about exclusions.
 | Captions were unavailable | Still transcribed, just by a different route. |
 | The link is WebEx or GoTo | Skipped — not supported. |
 
-## Who to ask
+## Where to get help
 
-Your Meeting Agent administrator handles bot naming, which meetings are captured,
-and whether recording is on for your team.
+In this order:
+
+1. **The in-product help.** There's a question-mark icon on the Meeting Agent
+   screen — open it and search for the word you're stuck on. The main screen's
+   help also has walkthrough videos. Try this first; most questions are answered
+   here in seconds.
+2. **Your organization's Meeting Agent / IT contact.** They handle bot naming,
+   which meetings are captured, and whether recording is on for your team.
+3. **Krista Support**, through that contact.
 
 ---
 

@@ -78,6 +78,16 @@ If intentional, nothing to fix. If not, the person who removed it probably didn'
 know what it was — which is a naming and communication problem. Give the bot a
 self-explanatory name.
 
+### Content is missing, and nobody removed the bot
+
+Check whether a participant used the in-meeting chat controls. Anyone can type
+`@<bot> pause`, `@<bot> opt out`, or `@<bot> remove last X minutes`, and each does
+exactly what it says. A meeting with an unexplained gap in the middle is often a
+`pause` that was never resumed.
+
+This is working as intended — but it does mean "missing content" is not always a
+fault. Ask the attendees before escalating.
+
 ### "Turned off for this meeting" / "Not scheduled to join"
 
 Capture was off for that meeting. Check your bucket routing — a bucket set to
