@@ -19,7 +19,7 @@ Do not hand a customer the whole repo. Hand them the track that matches their ro
 | **IT / Workspace Admin** | "What do I have to configure?" | [Prerequisites](docs/02-setup/prerequisites.md) → the platform page for Teams / Meet / Zoom → [Workspace configuration](docs/02-setup/workspace-configuration.md) → [Verify your setup](docs/02-setup/verify-your-setup.md) |
 | **New user being onboarded** | "How do I get started?" | [Setting yourself up](docs/02-setup/first-time-registration.md) → [Getting the best from Krista](docs/03-operating/meeting-hygiene.md) |
 | **End user** | "Why didn't Krista join my meeting?" | [Questions people ask](docs/04-faq.md) → [Getting the best from Krista](docs/03-operating/meeting-hygiene.md) |
-| **Security reviewer** | "Where does our data go?" | Not published yet — route to the customer's Krista TAM |
+| **Security reviewer** | "Where does our data go?" | Not covered here by design — route to the customer's Krista TAM |
 | **Day-2 operator** | "It's live — now what?" | [Admin day 2](docs/03-operating/admin-day-2.md) → [Troubleshooting](docs/05-troubleshooting.md) |
 
 ## Contents
@@ -52,11 +52,11 @@ Do not hand a customer the whole repo. Hand them the track that matches their ro
 - [Glossary](docs/99-reference/glossary.md)
 - [Limits and quotas](docs/99-reference/limits-and-quotas.md)
 
-> **Data handling is not published here.** The security-review page is held back
-> until its open questions are answered and signed off by product and legal.
-> Customers forward that page verbatim into vendor security reviews, so it ships
-> when it is exact — not before. Until then, route security-review questions to
-> the customer's Krista TAM.
+> **Data handling is intentionally out of scope for this guide.** Storage,
+> retention, sub-processors, and certification questions are answered per
+> customer by their Krista TAM, since the answers depend on how their workspace
+> is provisioned. Route security-review questions there rather than adding a page
+> here.
 
 ---
 

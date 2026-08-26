@@ -80,8 +80,13 @@ Removing a user's access does not delete the meetings, transcripts, or action
 items they were associated with. Historical records keep their references so
 past meetings continue to read correctly.
 
-> **OPEN —** Is there a bulk import / SCIM path for provisioning users, or is it
-> one at a time through the console? · _ask: Meeting Agent product owner_
+**Bulk provisioning is handled for you.** You don't need to add people one at a
+time. Send your Krista TAM a master list from your IT team — the people who need
+access, and who among them should be administrators — and they'll load it.
+
+The list is worth getting right before you send it, since it's also the moment to
+decide who needs a licensed seat and who is better as an Observer. See the four
+user types above.
 
 > **OPEN —** What is the exact self-service path to change a user between
 > licensed and Observer, and does it take effect immediately for calendar sync?

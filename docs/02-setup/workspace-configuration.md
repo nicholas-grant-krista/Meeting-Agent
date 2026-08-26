@@ -127,12 +127,10 @@ the license.
 
 ## Other workspace settings
 
-Meeting Agent also supports per-workspace AI/LLM configuration, which governs how
-summaries and action items are generated. This is normally set with your Krista
-TAM during onboarding rather than self-served.
-
-> **OPEN —** Should customers configure their own LLM credentials, or does Krista
-> manage this centrally by default? · _ask: Meeting Agent product owner_
+The AI configuration behind summaries and action items is **managed centrally by
+Krista**. You don't need to supply or maintain your own model credentials, and
+there's nothing to configure on your side. If you have a specific requirement
+here, your Krista TAM is the person to raise it with.
 
 ---
 

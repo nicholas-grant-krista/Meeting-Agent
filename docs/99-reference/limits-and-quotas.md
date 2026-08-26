@@ -89,9 +89,21 @@ meeting slot where a hundred meetings start at once — raise it with your TAM a
 capacity question during onboarding. Do not assume a limit exists that will
 protect you, and do not assume there is none that will affect you.
 
-> **OPEN —** What simultaneous-capture volume is a given deployment sized for,
-> and what does a customer see if that capacity is exceeded? This is the one
-> genuine gap on this page. · _ask: Meeting Agent product owner + ops_
+> **OPEN —** Two distinct questions sit behind this, and only the second belongs
+> on a customer page:
+>
+> 1. **Capacity** — how many simultaneous captures has a given environment been
+>    provisioned for? This is an infrastructure sizing figure, not a product
+>    setting, and it will differ per environment. · _ask: ops_
+> 2. **Behaviour at the ceiling** — when the environment cannot start another
+>    capture, what does the customer actually see? Krista retries a deploy up to
+>    three times, so the likely outcome is the meeting surfacing as **failed**
+>    rather than skipped — but that is inference from the retry configuration, not
+>    a verified behaviour, and it needs confirming before this page states it.
+>    · _ask: Meeting Agent product owner_
+>
+> Until (2) is answered, the paragraph above is deliberately framed as "raise it
+> with your TAM" rather than describing a failure mode we have not observed.
 
 ## Processing time after a meeting
 

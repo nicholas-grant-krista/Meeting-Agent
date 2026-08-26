@@ -94,3 +94,21 @@ the Meeting Agent release they document.
   tutorials — replacing the vaguer "help icon" wording.
 - `05-troubleshooting.md` gains a registration table covering the first-sign-in
   symptoms, most of which are self-service.
+
+### Answered
+- **Krista manages the AI configuration centrally** — customers don't supply or
+  maintain model credentials. (`workspace-configuration.md`)
+- **No customer-side network requirements** — no allowlists, IP ranges, or
+  firewall changes; the TAM handles anything environment-specific.
+  (`prerequisites.md`)
+- **Bulk user provisioning is handled by the TAM** from a master list supplied by
+  customer IT — no one-at-a-time console work. (`users-and-roles.md`)
+
+### Changed
+- Reworded the concurrency open item, which conflated two questions: environment
+  capacity (an ops sizing figure) and what a customer actually sees at the
+  ceiling (a product behaviour). Only the second belongs on a customer page, and
+  it is now stated as unverified inference rather than implied fact.
+- Data handling is now recorded as **intentionally out of scope** rather than
+  pending sign-off. Security-review questions are answered per customer by their
+  TAM.

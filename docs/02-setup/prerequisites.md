@@ -110,9 +110,10 @@ and compliance function during onboarding rather than after an incident.
 | Browser access for your users | Meeting Agent's interface is web-based. |
 | Bot avatar image (optional) | A publicly reachable `http(s)` URL pointing directly at an image. If not set, Krista joins with her camera off. |
 
-> **OPEN —** Are there network requirements on the customer side — allowlisted
-> domains, IP ranges, or firewall rules — for either the interface or Krista?
-> · _ask: Meeting Agent product owner_
+**There's nothing for your network team to do.** No allowlists, IP ranges, or
+firewall changes are needed on your side, for either the interface or for Krista
+joining meetings. If anything network-related does come up for your environment,
+your Krista TAM works through it with you.
 
 ## Readiness checklist
 
